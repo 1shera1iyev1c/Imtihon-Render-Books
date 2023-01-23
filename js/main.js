@@ -163,7 +163,7 @@ elNewBtn.addEventListener("click", function(evt) {
     let pattern = new RegExp(yearValue, 'gi')
 
     ;(async function() {
-        let responce = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${pattern}&orderBy=newest`);
+        let responce = await fetch(`https://www.googleapis.com/books/v1/volumes?q=javascript&orderBy=newest`);
         data = await responce.json();
         renderBooks(data, elWrapper)
     })().catch(() =>{
