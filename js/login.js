@@ -14,7 +14,7 @@ elForm.addEventListener('submit', function (evt) {
 
     let emailAndPass =`Login: ${emailValue} and Password: ${passValue}`
 
-    if (emailValue == '1sheraliyev1c@gmail.com' && passValue == '12345') {
+    if (emailValue == 'kitob' && passValue == '12345') {
         window.location.replace('main.html')
         storage.setItem('LoginAndPass', JSON.stringify(emailAndPass))
     } else if (emailValue !== '1sheraliyev1c@gamil.com' || passValue !== '12345') {
